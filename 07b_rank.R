@@ -1,0 +1,20 @@
+suppressMessages({library(data.table); library(randomForest); library(xgboost)})
+setwd("D:/MLroute2")
+r45 <- readRDS("outputs/rat_expr45.rds")
+X <- r45$X; m <- r45$m
+y <- ifelse(m$L1 == "Treat", 1, 0)
+genes <- rownames(X)
+set.seed(1); rf <- randomForest(x = t(X), y = factor(y), ntree = 500, importance = TRUE)
+imp <- importance(rf, type = 1)
+rk <- rank(-imp[, 1])
+set.seed(1)
+xgb <- xgb.train(params = list(objective="binary:logistic", max_depth=3, eta=0.05,
+                               subsample=0.8, colsample_bytree=0.8),
+                 data = xgb.DMatrix(t(X), label = y), nrounds = 100, verbose = 0)
+gain <- xgb.importance(model = xgb)
+gm <- setNames(gain$Gain, gain$Feature)
+rkx <- rank(-gm[genes])
+cat("RF MDA rank of Ccnb2:", rk[genes == "Ccnb2"], "/45\n")
+cat("XGB Gain rank of Ccnb2:", rkx[genes == "Ccnb2"], "/45\n")
+cat("top5 RF MDA:", genes[order(rk)][1:5], "\n")
+cat("top5 XGB Gain:", genes[order(rkx)][1:5], "\n")
