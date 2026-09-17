@@ -43,6 +43,13 @@ Raw expression matrices are large and must be downloaded from GEO / the original
 (`normalize.txt` for GSE57815 samples; `mouse_expr.csv` for GSE44783); sample-level metadata tables
 used for label definition are derived from GEO series GSM records.
 
+## Related data in this repository
+`RNAseq_supplementary/` holds the crucian carp RNA-seq deliverable (QC metrics, mapping rates,
+reference genome metadata, expression matrices, DEG and enrichment results) prepared for a
+reviewer response — covering sequencing quality, mapping statistics, reference genome/annotation
+versions, gene-ID conversion evidence, DEG/enrichment outputs and expression-level QC figures.
+See `RNAseq_supplementary/README.md` for a full file index.
+
 ## Methods summary (for full details see the manuscript)
 - Labels: GEO numeric dose (see above); alignment by explicit `match()` + `stopifnot(identical)`
   (never `merge()`, which reorders rows).

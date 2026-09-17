@@ -1,0 +1,7 @@
+group	type	all	up	down
+H_vs_C	fpkm	7234	2041	5193
+H_vs_C	tpm	7417	1472	5945
+L_vs_C	fpkm	8141	3162	4979
+L_vs_C	tpm	9459	3303	6156
+L_vs_H	fpkm	9298	6243	3055
+L_vs_H	tpm	9524	7256	2268
