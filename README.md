@@ -63,7 +63,7 @@ They do not produce any reported number or figure.
 
 ## Software environment
 
-`sessionInfo()` output for every analysis step is in [`sessionInfo/`](sessionInfo/) — one file per
+`sessionInfo()` output for the machine-learning and ortholog-mapping steps is in [`sessionInfo/`](sessionInfo/) — one file per
 script group, with a summary table of the key package versions (R 4.6.0; caret 7.0-1, xgboost 3.2.1.1,
 randomForest 4.7-1.2, gbm 2.3.1, kernlab 0.9-33, glmnet 5.0, nnet 7.3-20, rpart 4.1.27, pROC 1.19.0.1,
 DALEX 2.5.3, homologene 1.4.68.19.3.27). Versions for components outside the R environment
