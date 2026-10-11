@@ -101,7 +101,7 @@ DALEX 2.5.3, homologene 1.4.68.19.3.27). Versions for components outside the R e
 - **Gene-symbol mapping.** Orthologue correspondence verified with NCBI HomoloGene; 39 of the 45 panel genes
   map 1:1:1:1 across rat, mouse, zebrafish and human (CCNB2 included).
 - **Batch correction.** Expression matrices were processed **within each cohort** (between-array
-  normalization, log₂ transformation, probe-to-gene annotation). **No batch-effect correction (e.g. ComBat)
+  normalization, log₂ transformation, probe-to-gene annotation). **No batch-effect correction 
   was applied**, because no pooled cross-platform matrix and no multi-gene cross-platform model was
   constructed. No held-out data informed any preprocessing, feature-selection, tuning or ranking step.
 - **Random seeds** are recorded in the scripts at every stochastic step (main pipeline 123; XGBoost folds
