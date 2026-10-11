@@ -42,7 +42,7 @@ samples (100%)** and yielded **200 named compounds** plus 279 vehicle-only contr
 | 9 | `fig_importance_bars.R`, `fig_shap_polar.R` | Importance figure and SHAP polar/beeswarm/bar panels per model |
 | 10 | **`fig_grouped_cv.R`** | **Figure 3C** (three-caliber CV comparison) and the per-fold stability figure |
 | 11 | **`fig3H.R`** | **Figure 3H**: consistency of CCNB2 induction across rat strata (duration / vehicle) |
-| 12 | **`fig_style2.R`** | Journal-style vector figures: **Figure 3K** forest plot (three cohorts), CV-performance and fish dose–response panels |
+| 12 | **`fig_style2.R`** | Journal-style vector figures: **Figure 3J** forest plot (three cohorts), CV-performance and fish dose–response panels |
 | 13 | `s5_sensitivity.R` | Mouse sensitivity strata (time × sex) + per-compound table |
 | 14 | `appendix_tables.R`, `format_supp_tables.R` | Supplementary tables (per-sample metadata, classifier performance, ranking matrix, LOCO/Youden) |
 | 15 | **`ortholog_map.R`** | Cross-species orthologue mapping (NCBI HomoloGene, offline version-pinned database) |
