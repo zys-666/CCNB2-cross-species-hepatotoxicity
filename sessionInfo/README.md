@@ -1,6 +1,6 @@
 # Software environment
 
-`sessionInfo()` output for every analysis step of this study, as produced by the scripts in the
+`sessionInfo()` output for the machine-learning and ortholog-mapping steps of this study, as produced by the scripts in the
 repository root (R 4.6.0, x86_64-w64-mingw32/x64, Windows 10 x64 build 19045).
 
 | File | Produced by | Covers |
