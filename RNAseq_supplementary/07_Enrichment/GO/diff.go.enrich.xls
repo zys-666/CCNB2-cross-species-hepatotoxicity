@@ -1,0 +1,10 @@
+Sample	DEG-type	GO_enrich_num.	BP	CC	MF
+H_vs_C	DEG-all	602	418	66	118
+H_vs_C	DEG-up	584	385	99	100
+H_vs_C	DEG-down	608	434	36	138
+L_vs_C	DEG-all	889	592	125	172
+L_vs_C	DEG-up	896	558	150	188
+L_vs_C	DEG-down	748	528	73	147
+L_vs_H	DEG-all	1155	760	138	257
+L_vs_H	DEG-up	1076	677	135	264
+L_vs_H	DEG-down	614	421	75	118
