@@ -8,7 +8,6 @@ repository root (R 4.6.0, x86_64-w64-mingw32/x64, Windows 10 x64 build 19045).
 | `sessionInfo_training_v3.txt` | `training_v3.R` | 9-classifier screening: caret, randomForest, xgboost, gbm, kernlab (SVM), glmnet, nnet, rpart, pROC, DALEX, ggplot2, data.table |
 | `sessionInfo_nested_cv_v3.txt` | `nested_cv_v3.R` | Compound-grouped nested CV + cluster bootstrap: caret, pROC, data.table |
 | `sessionInfo_ortholog_map.txt` | `ortholog_map.R` | Cross-species orthologue mapping: homologene 1.4.68.19.3.27, data.table |
-| `sessionInfo_combat_workflow.txt` | `combat_workflow.R` | Within-cohort normalisation assessment: sva (ComBat), limma |
 
 ## Key package versions
 
