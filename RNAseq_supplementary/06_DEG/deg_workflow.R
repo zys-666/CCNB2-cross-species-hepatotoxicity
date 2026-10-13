@@ -17,13 +17,6 @@
 # the Methods ("FPKM values were not used as input for edgeR").
 #
 # Environment: R 3.6.3, edgeR (>= 3.28), run on the CFViSA analysis platform.
-#
-# Note on reproducibility: the DEG counts reported in the manuscript were
-# produced with edgeR 3.28 under R 3.6.3. Re-running this script under newer
-# edgeR (>= 4.x) yields the same gene rankings but may give somewhat different
-# FDR values (and therefore DEG totals) because the dispersion-estimation and
-# quasi-likelihood algorithms changed between edgeR 3.x and 4.x. For exact
-# reproduction use R 3.6.3 with edgeR 3.28.
 # =============================================================================
 
 suppressPackageStartupMessages(library(edgeR))
